@@ -1,4 +1,4 @@
-(function(window) {
+(function Module(window) {
 
 	var AGPL = window.AGPL || {};
 
@@ -15,7 +15,8 @@
 	AGPL.utils = {
 		shrinkCNC: function() {
 			$('.AGPL-cnc-box').classList.toggle('shrink');
-			$('.blocks .content').classList.toggle('shrink');
+            $('.blocks .content').classList.toggle('shrink');
+            console.log('test')
 		}
 	}
 
