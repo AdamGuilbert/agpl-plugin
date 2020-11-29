@@ -1,0 +1,43 @@
+.blocks .content {
+    overflow-y: hidden;
+    transition: all .5s ease;
+    max-height: 0px;
+}
+
+.AGPL-cnc-box {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 0 !important;
+}
+
+input + .content {
+    display: inherit !important;
+}
+
+.AGPL-cnc-box:hover {
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.25);
+}
+
+.blocks .content.shrink {
+    max-height: 500px;
+}
+
+.AGPLSTOCKouter {
+    white-space: nowrap;	
+}
+
+#cncDropdownArrow {
+    transition: all .5s ease;
+}
+
+.AGPL-cnc-box.shrink > #cncDropdownArrow {
+    transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 767px) {
+    .my-custom-field1.store-location.col {
+        margin-bottom: 0 !important;
+    }
+}				
+
