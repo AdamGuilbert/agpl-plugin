@@ -100,35 +100,10 @@ class Agpl_Plugin_Public {
 
 	}
 
-	function custom_text_xmas_trees(){
+	public function xmas_trees_popup(){
 		if (current_user_can('administrator')) {
-			global $product;
-		
-			// Define your categories in this array
-			$product_cats = [
-				'cut-trees-trees-real','cut-trees',
-				'pot-trees','pot-trees-trees-real'
-			];
-		
-			$external_links = [
-				'Christmas Tree Care & Size Guide' => 'https://www.bluediamond.gg/christmas-tree-care-and-size-guide' ,
-				'Christmas Tree Sustainability' => 'https://www.bluediamond.gg/christmas-tree-sustainability',
-			];
-		
-			if(has_term($product_cats, 'product_cat', $product->get_id())){
-				echo "<hr>";
-				foreach ($external_links as $disp => $link) {
-					echo "
-						<p>
-							<a href='{$link}' target='_blank' rel='noopener'>
-								<span class='itemlinks'>{$disp}</span>
-							</a>
-						</p>
-						"
-					;
-				}
-			}
+			$template = plugin_dir_url( __FILE__ ) . "/templates/xmas-tree-popup.php";
 		}
 	}
-	
+
 }
