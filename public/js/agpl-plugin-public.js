@@ -16,7 +16,6 @@
 		shrinkCNC: function() {
 			$('.AGPL-cnc-box').classList.toggle('shrink');
             $('.blocks .content').classList.toggle('shrink');
-            console.log('test')
 		}
     }
 
