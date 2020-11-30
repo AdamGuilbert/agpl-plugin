@@ -1,6 +1,6 @@
-var AGPL = window.AGPL || {};
+(function Module(window) {
 
-(function Module() {
+    AGPL = window.AGPL || {};
 
     /* <--- custom selector ---> */
     const $ = function(selector) {
