@@ -100,10 +100,4 @@ class Agpl_Plugin_Public {
 
 	}
 
-	public function xmas_trees_popup(){
-		if (current_user_can('administrator')) {
-			$template = plugin_dir_url( __FILE__ ) . "/templates/xmas-tree-popup.php";
-		}
-	}
-
 }
