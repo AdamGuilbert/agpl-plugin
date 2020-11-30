@@ -1,6 +1,6 @@
-var AGPL = window.AGPL || {};
+(function(window) {
 
-(function Module() {
+    var AGPL = window.AGPL || {};
 
     /* <--- custom selector ---> */
     const $ = function(selector) {
@@ -18,6 +18,10 @@ var AGPL = window.AGPL || {};
             $('.blocks .content').classList.toggle('shrink');
             console.log('test')
 		}
-	}
+    }
+
+    if (typeof(window.AGPL) === 'undefined'){
+    	window.AGPL = AGPL;
+  	}
 
 })(window);
