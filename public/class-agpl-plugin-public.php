@@ -100,4 +100,8 @@ class Agpl_Plugin_Public {
 
 	}
 
+	public function test_func() {
+		echo "<div onclick='AGPL.utils.shrinkCNC()'test</div>";
+	}
+
 }

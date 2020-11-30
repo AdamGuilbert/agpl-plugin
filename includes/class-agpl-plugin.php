@@ -173,6 +173,8 @@ class Agpl_Plugin {
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
+		$this->loader->add_action('woocommerce_single_product_summary', $plugin_public, 'test_func');
+
 	}
 
 	/**
